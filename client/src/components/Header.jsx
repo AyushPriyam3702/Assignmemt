@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/Icon.png";
 
 export const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header className="flex flex-row justify-between items-center p-4">
       <div className="flex flex-row items-center ">
@@ -14,7 +20,66 @@ export const Header = () => {
         </Link>
       </div>
 
-      <ul className="flex  items-center gap-8">
+      {menuOpen ? (
+        <div className="md:hidden flex flex-col absolute top-16 right-0 w-1/2">
+          <ul className="  flex flex-col  items-center gap-2 ">
+            <Link
+              to="/"
+              className="text-xl font-semibold text-[#263238] w-full bg-white text-center py-2 shadow-xl"
+            >
+              <li className=" ">Home</li>
+            </Link>
+            <Link
+              to="/service"
+              className="text-xl font-semibold text-[#263238] w-full bg-white text-center py-2 shadow-xl"
+            >
+              <li className=" text-xl  text-[#263238]">Service</li>
+            </Link>
+            <Link
+              to="/feature"
+              className="text-xl font-semibold text-[#263238] w-full bg-white text-center py-2 shadow-xl"
+            >
+              <li className=" text-xl  text-[#263238]">Feature</li>
+            </Link>
+            <Link
+              to="/product"
+              className="text-xl font-semibold text-[#263238] w-full bg-white text-center py-2 shadow-xl"
+            >
+              <li className=" text-xl  text-[#263238]">Product</li>
+            </Link>
+            <Link
+              to="/testimonial"
+              className="text-xl font-semibold text-[#263238] w-full bg-white text-center py-2 shadow-xl"
+            >
+              <li className=" text-xl  text-[#263238]">Testimonial</li>
+            </Link>
+            <Link
+              to="/FAQ"
+              className="text-xl font-semibold text-[#263238] w-full bg-white text-center py-2 shadow-xl"
+            >
+              <li className=" text-xl  text-[#263238]">FAQ</li>
+            </Link>
+            <Link
+              to="/"
+              className="text-xl font-semibold  w-full bg-white text-center py-2 shadow-xl rounded-lg"
+            >
+              <button className="  ">Login</button>
+            </Link>
+
+            <Link
+              to="/"
+              className="text-xl font-semibold  w-full bg-[#4CAF4F] text-center py-2 shadow-xl rounded-lg"
+            >
+              <button className="  text-white ">Signup</button>
+            </Link>
+          </ul>
+          <div className="flex flex-col gap-2 "></div>
+        </div>
+      ) : (
+        ""
+      )}
+
+      <ul className="md:flex hidden items-center gap-8">
         <Link to="/" className="">
           <li className=" text-xl  text-[#263238]">Home</li>
         </Link>
@@ -35,7 +100,7 @@ export const Header = () => {
         </Link>
       </ul>
 
-      <div className="flex flex-row items-center gap-4 ">
+      <div className="hidden md:flex flex-row items-center gap-4 ">
         <Link to="/" className="flex items-center">
           <button className=" px-4 py-2 rounded-lg ">Login</button>
         </Link>
@@ -45,6 +110,12 @@ export const Header = () => {
             Signup
           </button>
         </Link>
+      </div>
+
+      <div className="flex items-center md:hidden">
+        <button onClick={toggleMenu} className="text-5xl focus:outline-none">
+          ☰
+        </button>
       </div>
     </header>
   );
