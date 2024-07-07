@@ -133,7 +133,7 @@ export const Home = () => {
       <ImgTextBox
         image={MobileLogin}
         text="How to design your site footer like we did"
-        description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+        description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
             minus quae porro earum voluptas officia laborum amet. Explicabo
             possimus optio, vitae voluptatibus aut rerum obcaecati esse
             praesentium neque expedita enim. Accusamus, obcaecati perspiciatis
