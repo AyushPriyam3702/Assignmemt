@@ -11,10 +11,10 @@ export const ImgTextBox = ({ image, text, description, buttonText }) => {
         </div>
 
         <div className="flex flex-col md:w-1/2 p-4">
-          <h1 className="font-inter font-semibold md:text-3xl text-2xl leading-[44px]">
+          <h1 className="font-inter font-semibold md:text-3xl text-2xl md:leading-[44px]">
             {text}
           </h1>
-          <p className="font-inter font-normal text-sm leading-5">
+          <p className="font-inter font-normal text-sm md:leading-5">
             {description}
           </p>
           <div className="">

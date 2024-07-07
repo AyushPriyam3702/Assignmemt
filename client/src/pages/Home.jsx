@@ -12,6 +12,7 @@ import Icon3 from "../assets/Icon (6).png";
 import image2 from "../assets/frame1.png";
 import { CommCard } from "../components/CommCard";
 import { ImgTextBox } from "../components/ImgTextBox";
+import BusinessSection from "../components/BusinessSection";
 export const Home = () => {
   return (
     <>
@@ -124,6 +125,8 @@ export const Home = () => {
             cumque maxime totam velit dicta ipsum."
         buttonText="Learn More"
       />
+
+      <BusinessSection />
     </>
   );
 };
