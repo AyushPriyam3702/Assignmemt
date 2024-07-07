@@ -14,7 +14,7 @@ const BusinessSection = () => {
 
   return (
     <div
-      className="flex flex-col lg:flex-row items-center lg:items-center p-8"
+      className="flex flex-col lg:flex-row items-center lg:items-center p-8 dark:bg-gray-900 dark:text-white"
       ref={ref}
     >
       <div className="text-center lg:text-left lg:w-1/2 mb-8 lg:mb-0 md:p-8">

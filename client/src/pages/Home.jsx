@@ -14,11 +14,12 @@ import { CommCard } from "../components/CommCard";
 import { ImgTextBox } from "../components/ImgTextBox";
 import BusinessSection from "../components/BusinessSection";
 import MobileLogin from "../assets/pana.png";
+import image3 from "../assets/image 9.png";
 export const Home = () => {
   return (
     <>
       {/* Hero section  */}
-      <div className="flex  flex-col md:flex-row justify-center items-center p-4 ">
+      <div className="flex  flex-col md:flex-row justify-center items-center p-4 dark:bg-gray-900 dark:text-white">
         <div className="flex md:w-1/2 p-4 ">
           <div className="mx-auto">
             <h1 className="font-inter text-3xl md:text-6xl font-semibold md:leading-[76px] text-left  ">
@@ -43,12 +44,12 @@ export const Home = () => {
       {/* Hero section ends here */}
 
       {/* Our Client starts here */}
-      <div className="flex flex-col p-4 bg-white mx-auto w-full">
+      <div className="flex flex-col p-4 bg-white mx-auto w-full dark:bg-black dark:text-white">
         <div className="flex flex-col">
           <h1 className="font-inter font-semibold text-3xl leading-[44px] text-center">
             Our Clients
           </h1>
-          <p className="font-inter font-normal text-base leading-6 text-center text-[#18191F]">
+          <p className="font-inter font-normal text-base leading-6 text-center text-[#18191F] dark:text-white ">
             We have been working with some Fortune 500+ clients
           </p>
         </div>
@@ -79,12 +80,12 @@ export const Home = () => {
       {/* Our Client ends here */}
 
       {/* Community section starts here */}
-      <div className="flex flex-col p-4 bg-white">
+      <div className="flex flex-col p-4 dark:bg-black dark:text-white">
         <div className="flex flex-col mx-auto text-center">
           <h1 className="font-inter font-semibold text-3xl leading-[44px] text-center">
             Manage your entire community in a single system
           </h1>
-          <p className="font-inter font-normal text-base leading-6 text-center text-[#717171]">
+          <p className="font-inter font-normal text-base leading-6 text-center text-[#717171] dark:text-white">
             Who is Nextcent suitable for?
           </p>
         </div>
@@ -141,6 +142,47 @@ export const Home = () => {
             cumque maxime totam velit dicta ipsum."
         buttonText="Learn More"
       />
+      <div className="flex flex-row justify-center items-center space-x-8 p-4 dark:bg-gray-900 dark:text-white">
+        <div className="">
+          <div className="mx-auto">
+            <img src={image3} alt="mx-auto" />
+          </div>
+        </div>
+        <div className="w-1/2 flex flex-col space-y-3">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+            minus quae porro earum voluptas officia laborum amet. Explicabo
+            possimus optio, vitae voluptatibus aut rerum obcaecati esse
+            praesentium neque expedita enim. Accusamus, obcaecati perspiciatis
+            autem earum amet id et ipsum at ex enim voluptas sapiente nulla a
+            voluptatibus omnis laborum quibusdam ut. Voluptatibus nobis maiores
+            cumque maxime totam velit dicta ipsum.
+          </p>
+          <h1 className="text-[#4CAF4F] text-2xl">Tim Smith</h1>
+          <p>British Dragon Boat Association</p>
+
+          <div className="flex flex-row md:flex-wrap justify-center p-4 gap-4 items-center">
+            <div className="flex justify-center w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6">
+              <img src={Logo1} alt="client logo image" />
+            </div>
+            <div className="flex justify-center w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6">
+              <img src={Logo2} alt="client logo image" />
+            </div>
+            <div className="flex justify-center w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6">
+              <img src={Logo3} alt="client logo image" />
+            </div>
+            <div className="flex justify-center w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6">
+              <img src={Logo4} alt="client logo image" />
+            </div>
+            <div className="flex justify-center w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6">
+              <img src={Logo5} alt="client logo image" />
+            </div>
+            <p className="text-xl font-bold text-[#4CAF4F]">
+              Meet all customer &rarr;{" "}
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

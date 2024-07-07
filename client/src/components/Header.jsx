@@ -10,11 +10,11 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex flex-row justify-between items-center p-4">
+    <header className="flex flex-row justify-between items-center p-4 dark:bg-gray-900 dark:text-white">
       <div className="flex flex-row items-center ">
         <Link to="/" className="flex items-center">
           <img src={logo} alt="" className="h-8  md:h-8  mr-2" />
-          <h1 className="text-3xl md:text-4xl font-bold text-[#263238]">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#263238]  dark:text-white">
             Nexcent
           </h1>
         </Link>
@@ -25,7 +25,7 @@ export const Header = () => {
           <ul className="  flex flex-col  items-center gap-2 ">
             <Link
               to="/"
-              className="text-xl font-semibold text-[#263238] w-full bg-white text-center py-2 shadow-xl"
+              className="text-xl font-semibold text-[#263238] w-full bg-white  text-center py-2 shadow-xl"
             >
               <li className=" ">Home</li>
             </Link>
@@ -79,24 +79,24 @@ export const Header = () => {
         ""
       )}
 
-      <ul className="md:flex hidden items-center gap-8">
+      <ul className="md:flex hidden items-center gap-8 text-[#263238] dark:bg-gray-900 dark:text-white">
         <Link to="/" className="">
-          <li className=" text-xl  text-[#263238]">Home</li>
+          <li className=" text-xl  ">Home</li>
         </Link>
         <Link to="/service" className="">
-          <li className=" text-xl  text-[#263238]">Service</li>
+          <li className=" text-xl  ">Service</li>
         </Link>
         <Link to="/feature" className="">
-          <li className=" text-xl  text-[#263238]">Feature</li>
+          <li className=" text-xl  ">Feature</li>
         </Link>
         <Link to="/product" className="">
-          <li className=" text-xl  text-[#263238]">Product</li>
+          <li className=" text-xl  ">Product</li>
         </Link>
         <Link to="/testimonial" className="">
-          <li className=" text-xl  text-[#263238]">Testimonial</li>
+          <li className=" text-xl  ">Testimonial</li>
         </Link>
         <Link to="/FAQ" className="">
-          <li className=" text-xl  text-[#263238]">FAQ</li>
+          <li className=" text-xl  ">FAQ</li>
         </Link>
       </ul>
 

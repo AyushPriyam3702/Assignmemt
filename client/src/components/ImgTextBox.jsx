@@ -3,7 +3,7 @@ import React from "react";
 export const ImgTextBox = ({ image, text, description, buttonText }) => {
   return (
     <div>
-      <div className="flex flex-col md:flex-row items-center p-4 bg-white">
+      <div className="flex flex-col md:flex-row items-center p-4 bg-white dark:bg-black dark:text-white">
         <div className="md:w-1/2 ">
           <div className="">
             <img src={image} alt="" className="mx-auto" />
