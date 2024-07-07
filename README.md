@@ -22,7 +22,7 @@ Welcome to my submission for the PPA Hiring assignment. Below are the details an
 
 ### Light Mode
 
-![Light Mode](https://drive.google.com/file/d/1CypOjmTY4TD0Fz_8kw88YHJGUK_xQ4BI/view?usp=sharing)
+![Light Mode](https://drive.google.com/uc?id=1CypOjmTY4TD0Fz_8kw88YHJGUK_xQ4BI)
 
 ### Dark Mode
 
