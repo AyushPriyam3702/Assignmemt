@@ -26,11 +26,11 @@ Welcome to my submission for the PPA Hiring assignment. Below are the details an
 
 ### Dark Mode
 
-![Dark Mode](https://drive.google.com/file/d/1WChBbCKalJOPLYrNqGMqng5NxPr36LMn/view?usp=sharing)
+![Dark Mode](https://drive.google.com/uc?id=1WChBbCKalJOPLYrNqGMqng5NxPr36LMn)
 
 ### Mobile View
 
-![Mobile View](https://drive.google.com/file/d/11ekitFZsNodZN-Z5ws4KXrLU5wPOXJzg/view?usp=sharing)
+![Mobile View](https://drive.google.com/uc?id=11ekitFZsNodZN-Z5ws4KXrLU5wPOXJzg)
 
 
 ## Usage
