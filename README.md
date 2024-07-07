@@ -20,17 +20,24 @@ Welcome to my submission for the PPA Hiring assignment. Below are the details an
 
 ## Screenshots
 
-### Light Mode
-
-![Light Mode](https://drive.google.com/uc?id=1CypOjmTY4TD0Fz_8kw88YHJGUK_xQ4BI)
-
-### Dark Mode
-
-![Dark Mode](https://drive.google.com/uc?id=1WChBbCKalJOPLYrNqGMqng5NxPr36LMn)
+<div style="display: flex; justify-content: center; align-items: center;">
+  <!-- Light Mode Screenshot -->
+  <div style="margin-right: 20px;">
+    <img src="https://drive.google.com/uc?id=1CypOjmTY4TD0Fz_8kw88YHJGUK_xQ4BI" alt="Light Mode" width="400" />
+    <p style="text-align: center;">Light Mode</p>
+  </div>
+  
+  <!-- Dark Mode Screenshot -->
+  <div>
+    <img src="https://drive.google.com/uc?id=1WChBbCKalJOPLYrNqGMqng5NxPr36LMn" alt="Dark Mode" width="400" />
+    <p style="text-align: center;">Dark Mode</p>
+  </div>
+</div>
 
 ### Mobile View
 
-![Mobile View](https://drive.google.com/uc?id=11ekitFZsNodZN-Z5ws4KXrLU5wPOXJzg)
+<img src="https://drive.google.com/uc?id=11ekitFZsNodZN-Z5ws4KXrLU5wPOXJzg" alt="Mobile View" width="300" />
+
 
 
 ## Usage
