@@ -1,4 +1,8 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import image from "../assets/HeroImg.png";
 import Logo1 from "../assets/Logo (3).png";
 import Logo2 from "../assets/Logo (4).png";
@@ -15,7 +19,17 @@ import { ImgTextBox } from "../components/ImgTextBox";
 import BusinessSection from "../components/BusinessSection";
 import MobileLogin from "../assets/pana.png";
 import image3 from "../assets/image 9.png";
+import { Footer } from "../components/Footer";
 export const Home = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+  };
   return (
     <>
       {/* Hero section  */}
@@ -142,13 +156,13 @@ export const Home = () => {
             cumque maxime totam velit dicta ipsum."
         buttonText="Learn More"
       />
-      <div className="flex flex-row justify-center items-center space-x-8 p-4 dark:bg-gray-900 dark:text-white">
+      <div className="flex flex-col md:flex-row justify-center items-center space-x-8 p-4 dark:bg-gray-900 dark:text-white">
         <div className="">
           <div className="mx-auto">
             <img src={image3} alt="mx-auto" />
           </div>
         </div>
-        <div className="w-1/2 flex flex-col space-y-3">
+        <div className="md:w-1/2 flex flex-col space-y-3">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
             minus quae porro earum voluptas officia laborum amet. Explicabo
@@ -177,12 +191,13 @@ export const Home = () => {
             <div className="flex justify-center w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6">
               <img src={Logo5} alt="client logo image" />
             </div>
-            <p className="text-xl font-bold text-[#4CAF4F]">
-              Meet all customer &rarr;{" "}
+            <p className="md:text-xl md:font-bold text-[#4CAF4F]">
+              Meet all customer &rarr;
             </p>
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 };

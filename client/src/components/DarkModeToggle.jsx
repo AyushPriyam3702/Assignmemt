@@ -22,7 +22,7 @@ const DarkModeToggle = () => {
       onClick={() => setDarkMode(!darkMode)}
       className="p-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded"
     >
-      Toggle Dark Mode
+      Dark Mode
     </button>
   );
 };
