@@ -13,6 +13,7 @@ import image2 from "../assets/frame1.png";
 import { CommCard } from "../components/CommCard";
 import { ImgTextBox } from "../components/ImgTextBox";
 import BusinessSection from "../components/BusinessSection";
+import MobileLogin from "../assets/pana.png";
 export const Home = () => {
   return (
     <>
@@ -127,6 +128,19 @@ export const Home = () => {
       />
 
       <BusinessSection />
+
+      <ImgTextBox
+        image={MobileLogin}
+        text="How to design your site footer like we did"
+        description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+            minus quae porro earum voluptas officia laborum amet. Explicabo
+            possimus optio, vitae voluptatibus aut rerum obcaecati esse
+            praesentium neque expedita enim. Accusamus, obcaecati perspiciatis
+            autem earum amet id et ipsum at ex enim voluptas sapiente nulla a
+            voluptatibus omnis laborum quibusdam ut. Voluptatibus nobis maiores
+            cumque maxime totam velit dicta ipsum."
+        buttonText="Learn More"
+      />
     </>
   );
 };
