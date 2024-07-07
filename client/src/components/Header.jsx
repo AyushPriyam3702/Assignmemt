@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/Icon.png";
+import DarkModeToggle from "./DarkModeToggle";
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -101,6 +102,7 @@ export const Header = () => {
       </ul>
 
       <div className="hidden md:flex flex-row items-center gap-4 ">
+        <DarkModeToggle />
         <Link to="/" className="flex items-center">
           <button className=" px-4 py-2 rounded-lg ">Login</button>
         </Link>
@@ -112,7 +114,8 @@ export const Header = () => {
         </Link>
       </div>
 
-      <div className="flex items-center md:hidden">
+      <div className="flex items-center md:hidden gap-2">
+        <DarkModeToggle />
         <button onClick={toggleMenu} className="text-5xl focus:outline-none">
           ☰
         </button>

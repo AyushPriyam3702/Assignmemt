@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { Link } from "react-router-dom";
 import image from "../assets/HeroImg.png";
 import Logo1 from "../assets/Logo (3).png";
 import Logo2 from "../assets/Logo (4).png";
@@ -19,7 +19,11 @@ import { ImgTextBox } from "../components/ImgTextBox";
 import BusinessSection from "../components/BusinessSection";
 import MobileLogin from "../assets/pana.png";
 import image3 from "../assets/image 9.png";
-import { Footer } from "../components/Footer";
+import Cardimage1 from "../assets/image 18.png";
+import Cardimage2 from "../assets/image 19.png";
+import Cardimage3 from "../assets/image 20.png";
+import { Card } from "../components/Card";
+
 export const Home = () => {
   const settings = {
     dots: true,
@@ -44,9 +48,11 @@ export const Home = () => {
               Where to grow your business as a photographer: site or social
               media?
             </p>
-            <button className=" bg-[#4CAF4F] text-white px-6 py-3 my-4 rounded-md">
-              Register
-            </button>
+            <Link to="/">
+              <button className=" bg-[#4CAF4F] text-white px-6 py-3 my-4 rounded-md">
+                Register
+              </button>
+            </Link>
           </div>
         </div>
         <div className="flex md:w-1/2 p-4 ">
@@ -197,7 +203,30 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      <div className="flex flex-col md:flex-row justify-center p-6 gap-4 dark:bg-gray-900 dark:text-white">
+        <Card
+          image={Cardimage1}
+          text="Creating Streamlined Safeguarding Processes with OneRen"
+        />
+        <Card
+          image={Cardimage2}
+          text="Creating Streamlined Safeguarding Processes with OneRen"
+        />
+        <Card
+          image={Cardimage3}
+          text="Creating Streamlined Safeguarding Processes with OneRen"
+        />
+      </div>
+      <div className="flex flex-col p-8 space-y-4 bg-gray-900 text-white  dark:bg-black dark:text-white">
+        <p className="font-inter font-semibold text-4xl md:text-6xl md:leading-[76px] text-center ">
+          Pellentesque suscipit <br></br> fringilla libero eu.
+        </p>
+        <div className=" mx-auto">
+          <button className=" bg-[#4CAF4F] text-white px-6 py-3 my-4 rounded-md">
+            Get a Demo &rarr;
+          </button>
+        </div>
+      </div>
     </>
   );
 };
