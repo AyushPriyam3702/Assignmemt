@@ -61,7 +61,6 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      {/* Hero section ends here */}
 
       {/* Our Client starts here */}
       <div className="flex flex-col p-4 bg-white mx-auto w-full dark:bg-black dark:text-white">
